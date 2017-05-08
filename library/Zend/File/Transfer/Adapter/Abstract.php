@@ -556,6 +556,7 @@ abstract class Zend_File_Transfer_Adapter_Abstract
      * @param array $options Options to set
      * @param array $files   (Optional) Files to set the options for
      * @return Zend_File_Transfer_Adapter_Abstract
+     * @throws Zend_File_Transfer_Exception If an unknown option is passed.
      */
     public function setOptions($options = array(), $files = null) {
         $file = $this->_getFiles($files, false, true);
